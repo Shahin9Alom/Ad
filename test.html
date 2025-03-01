@@ -1,0 +1,38 @@
+<!DOCTYPE html>    
+<html lang="en">    
+<head>    
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Navigator Tourism</title>    
+    <style>    
+        :root {
+          --primary: #009173; /* হোভার কালার */
+          --background: #f5f5f5; /* স্মোক-হোয়াইট ব্যাকগ্রাউন্ড */
+          --button-bg: #333; /* বাটনের ডিফল্ট কালার */
+          --button-text: white;
+        }
+
+        body {
+          background: var(--background);
+          font-family: Arial, sans-serif;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+        }
+
+
+    </style>    
+</head>    
+<body>    
+
+
+    <script>    
+function showService(serviceId) {
+          document.querySelectorAll('.search-box').forEach(box => box.classList.remove('active'));
+          document.getElementById(serviceId).classList.add('active');
+        }
+    </script>    
+
+</body>    
+</html>
